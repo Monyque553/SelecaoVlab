@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+caption{
+    background-color: #39ff14;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table{
+    background-color: black;
+    border-color: #39ff14;
+}
+
+h1{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+html{
+    background-color: black;
+}
+
+input{
+    background-color: #39ff14;
+}
+
+button{
+    background-color: #ff0080;
+    color: white;
+}
+
+th{
+    text-align: center;
+}
+
+td{
+    text-align: center;
+}
+

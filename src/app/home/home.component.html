@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<table border="1">
+  <caption> <h1 >Tabela de Jogos </h1> <a style="background-color: #ff0080; color:aliceblue" routerLink="/favoritos">favoritos</a></caption>
+  <thead>
+      <tr>
+          <th>Nome <button (click) = 'sortGames("alphabetical")'>ordenar</button></th>
+          <th>Capa <button (click) = 'sortGames("popularity")'>ordenar por popularidade</button></th>
+          <th>Plataforma <button (click) = 'sortGames("relevance")'> ordenar por relevância </button></th>
+          <th>Data de lançamento <button (click) = 'sortGames("release-date")'>ordenar</button></th>
+          <th>Categoria</th>
+          <th>Desenvolvedora</th>
+      </tr>
+
+      <tr>
+        <th>-</th>
+        <th>-</th>
+        <th>
+          <input type="Plataforma">
+        </th>
+
+        <th>
+          <input type="Ano de Lançamento">
+          </th>
+
+          <th>
+            <input type="Categoria">
+          </th>
+
+          <th>
+            <input type="Desenvolvedor">
+          </th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let item of gamesList">
+          <td> <a style="color: aliceblue;" [routerLink]="['/details', item.id]">{{item.title}}
+             </a> <button (click) = 'definirInformacaoGlobal(item.id)'>
+              favoritar <img src="" alt="">
+            </button></td>
+          <td><img [src]=item.thumbnail alt=""></td>
+          <td>{{item.platform}}
+            
+          </td>
+          <td>{{item.release_date}}</td>
+          <td>{{item.genre}}</td>
+          <td>{{item.developer}}</td>
+          
+      </tr>
+    
+  </tbody>
+</table>
+
+</body>
+</html>
+
+

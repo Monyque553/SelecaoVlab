@@ -1,0 +1,16 @@
+html{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+
+table{
+    background-color: black;
+    color: aliceblue;
+}
+
+caption{
+    background-color: #39ff14;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

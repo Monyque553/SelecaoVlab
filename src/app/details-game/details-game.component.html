@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+<table border="1">
+    <caption><h1>Mais Informações</h1></caption>
+    <thead>
+        
+        <tr>
+            <th>Nome</th>
+            <th>Capa</th>
+            <th>Descrição</th>
+            <th>Url Game</th>
+            <th>Plataforma</th>
+            <th>Data de lançamento</th>
+            <th>Categoria</th>
+            <th>Desenvolvedora</th>
+            <th>Publicadora</th>
+            <th>Requisitos de sistema</th>
+      </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            
+            
+            <td>{{gameDetail.title}}</td>
+            <td><img [src]=gameDetail.thumbnail alt=""></td>
+            <td>{{gameDetail.short_description}}</td>
+            <td>{{gameDetail.game_url}}</td>
+            <td>{{gameDetail.platform}}</td>
+            <td>{{gameDetail.release_date}}</td>
+            <td>{{gameDetail.genre}}</td>
+            <td>{{gameDetail.developer}}</td>
+            <td>{{gameDetail.publisher}}</td>
+            <td>{{gameDetail.freetogame_profile_url}}</td>
+
+        </tr>
+    </tbody>
+    
+</table>
+
+</body>
+</html>
+
+
